@@ -1,14 +1,36 @@
-
-
-
-.clase-carrusel {
-    object-fit: cover; 
-    height: 300px; 
-    width: 300px; 
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
 }
 
+#menu1 a{
+    font-size: 18px;
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%; 
+}
+
+#menu1 button{
+    font-size: 18px;
+    
+
+}
+
+.carousel-inner{
+    max-height: 35rem;
+    
+
+
+}
+
+/*
+.carouselExampleIndicators{
+    height: 50rem;
+    height: 50rem;
+}
+*/
+
+
+@media (max-width:768px){
+    #intro {
+        width: 90px  !important; 
+    }
 }

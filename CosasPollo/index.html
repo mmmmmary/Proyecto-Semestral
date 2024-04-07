@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,85 +14,145 @@
 
     <!--linkhojaestilo-->
     <link rel="stylesheet" href="style.css">
-    
 
 </head>
 
-
 <body>
 
+  <header class="container-fluid bg-primary d-flex " >
+    <p> ---</p>
+  </header>
 
-    <!--Menu lg breakpoint(cambiar)-->
-    <nav class="navbar navbar-expand-sm bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">GroundZero</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <!--lista-->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Artistas.html">Artistas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Galeria.html">Galeria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Nosotros.html">Sobre Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Comprar.html">Comprar</a>
-                <!--<p>icono carritocompra?</p>-->
-              </li>
-             
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-3" id="menu1">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+        <span class="text-primary fs-5 fw-bold">ExtertD.</span>
+      
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Artistas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Obras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre nosotros</a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
-         
-    <br>
-    <br>
-    <br>
-    <br>
-
-    
-       
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="text" placeholder="Nosequesepuedebuscarxd" aria-label="Search">
+          <button class= "btn btn-primary btn-primary-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
     </div>
-      <!--carrusel-->
-      <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center align-items-center">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </nav>
+
+
+  <!--slider/carrusel-->
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagenes/adrianna-geo-1rBg5YSi00c-unsplash.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/europeana-6c43FgRt0Dw-unsplash.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/henrik-donnestad-t2Sai-AqIpI-unsplash.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+<section class="w-50 mx-auto text-center pt-5">
+  <h1 class="p-3 fs-2 border-top border-3"> tienda de arte</h1>
+  <p class="p-3 fa-4"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat ratione nostrum assumenda molestiae, tempore officia perferendis sit ab porro cupiditate necessitatibus debitis officiis! Provident exercitationem, eaque hic porro consequuntur ex.</p>
+
+
+  <section class="container-fluid"> 
+
+    <div class="row">
+      <div class="col">
+        <img src="imagenes/escultura.jpeg" alt="escultura" width="180" height="160">
+        <div>
+          <h3> desarrollo</h3>
+          <p> Lorem ipsum dolor sit amet consectetur</p>
+
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active ">
-            <img src="imagenes/image1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item " >
-            <img src="imagenes/image2.jpg " class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item " >
-            <img src="imagenes/image3.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>  
+
+      </div>
+    
+
+
+
+    </div>
+
+  </section>
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+
+ 
 
     
-</body>
+  
+  
+
 
 
 
