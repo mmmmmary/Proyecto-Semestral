@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Creación de Usuario</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center mb-4">Crear Usuario</h2>
+            <form id="registroForm">
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" class="form-control" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Crear Usuario</button>
+            </form>
+            <p class="mt-3 text-center">¿Ya tienes cuenta? <a href="Inicio_sesion.html">Iniciar Sesión</a></p>
+        </div>
+    </div>
+</div>
+
+<script>
+document.getElementById('registroForm').addEventListener('submit', function(event) {
+    var correo = document.getElementById('correo').value;
+    var contrasena = document.getElementById('contrasena').value;
+
+    if (!validarCorreo(correo)) {
+        alert('Por favor ingresa un correo electrónico válido.');
+        event.preventDefault();
+    } else if (!validarContrasena(contrasena)) {
+        alert('La contraseña debe contener al menos 6 caracteres y al menos una mayúscula.');
+        event.preventDefault();
+    }
+});
+
+function validarCorreo(correo) {
+    return correo.includes('@');
+}
+
+function validarContrasena(contrasena) {
+    return contrasena.length >= 6 && /[A-Z]/.test(contrasena);
+}
+</script>
+
+</body>
+</html>

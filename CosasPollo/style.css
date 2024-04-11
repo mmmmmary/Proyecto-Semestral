@@ -43,6 +43,33 @@ body{
 
 
 }
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imagen-container {
+    flex-basis: 30%; /* Cambia el tamaño de los contenedores de imagen según sea necesario */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.imagen-container img {
+    max-width: 100%;
+}
+
+.imagen-container h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.imagen-container p {
+    font-size: 16px;
+    color: #666;
+}
 
 
 
