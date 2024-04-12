@@ -1,8 +1,11 @@
+/*===============Propiedades Globales================*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    
 }
 
 
@@ -18,4 +21,34 @@ body {
      color:#3f3f3f;
      
  }
+
+ .container {
+  position: relative;
+  width: 100%;
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.image-container {
+  display: inline-block;
+  margin-right: 10px; /* Espacio entre las imágenes */
+  position: relative; /* Ajusta el posicionamiento relativo */
+}
+
+.img-thumbnail {
+  cursor: pointer;
+  width: 300px; /* Tamaño fijo para el ancho */
+  height: 300px; /* Tamaño fijo para la altura */
+  object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+}
+
+.popover-container {
+  position: absolute;
+  top: 100%; /* Ajusta el top para que aparezcan debajo de las imágenes */
+  left: 0;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1000;
+}
 

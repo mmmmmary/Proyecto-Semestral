@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
     <!--linkhojaestilo-->
-    <link rel="stylesheet" href="Style_artistas.css">
+    <link rel="stylesheet" href="styles/Style_artistas.css">
 </head>
 
 <body>
@@ -70,13 +70,54 @@
             </div>
         </div>
     </nav>
-   <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Vincent Van Gogh" data-bs-content="Soy Vincent van Gogh, un pintor postimpresionista conocido por mi estilo expresivo y uso audaz del color. Aunque no fui reconocido en vida, mi obra ha dejado una marca duradera en el arte moderno."><img src='imgArtistas/artista1.jpg'</button>
-
+    <h1 class="text-center my-5">Nuestros Artistas</h1>
+    <div class="container">
+        <div class="image-container">
+          <img src="imgArtistas/artista1.jpg" alt="Vicente Van Gogh" class="img-thumbnail" id="popoverImage1">
+          <div class="popover-container" id="popoverContainer1" style="display: none;">
+            <h6>El Maestro de los Girasoles</h6>
+            <p>Vincent van Gogh sigue cautivando con su arte emotivo y distintivo, inspirando a generaciones con su pasión por la pintura y su amor por la naturaleza. Su legado continúa vivo, recordándonos la importancia de expresar nuestras emociones a través del arte..</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="imgArtistas/artista2.jpg" alt="Miguel Angel" class="img-thumbnail" id="popoverImage2">
+          <div class="popover-container" id="popoverContainer2" style="display: none;">
+            <h6>El Escultor Divino</h6>
+            <p>Reconocido por su genio escultórico y su visión artística sin igual, Miguel Ángel es venerado como uno de los mayores artistas renacentistas. Su habilidad para dar vida a la piedra y su dedicación a la perfección técnica lo han convertido en una figura legendaria en la historia del arte.</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="imgArtistas/artista3.jpg" alt="Frida Khalo" class="img-thumbnail" id="popoverImage3">
+          <div class="popover-container" id="popoverContainer3" style="display: none;">
+            <h6>La Pintora de las Emociones</h6>
+            <p>Cautiva con su arte singular y su capacidad para plasmar su mundo interior en el lienzo. Su legado perdura, inspirando a generaciones con su valentía para enfrentar el dolor y su celebración de la vida a través del arte.</p>
+          </div>
+        </div>
+      </div>
+      
 <script>
-  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-  var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
-    return new bootstrap.Popover(popoverTriggerEl)
-  })
+document.getElementById('popoverImage1').addEventListener('click', togglePopover1);
+document.getElementById('popoverImage2').addEventListener('click', togglePopover2);
+document.getElementById('popoverImage3').addEventListener('click', togglePopover3);
+
+function togglePopover1() {
+  togglePopover('popoverContainer1');
+}
+
+function togglePopover2() {
+  togglePopover('popoverContainer2');
+}
+
+function togglePopover3() {
+  togglePopover('popoverContainer3');
+}
+
+function togglePopover(containerId) {
+  var popoverContainer = document.getElementById(containerId);
+  popoverContainer.style.display = popoverContainer.style.display === 'none' ? 'block' : 'none';
+}
+
+
 </script>
 
 
