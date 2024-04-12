@@ -16,9 +16,48 @@
     <link rel="stylesheet" href="styles/Style_galeria.css">
 
 </head>
-
 <body>
-
+    <div>
+        <!-- Filtros -->
+        <label for="artist">Artista:</label>
+        <select id="artist">
+          <option value="todos">Todos</option>
+          <option value="picasso">Miguel Angel</option>
+          <option value="vangogh">Van Gogh</option>
+          <option value="vangogh">Frida Khalo</option>
+          <!-- Agrega más opciones de artistas aquí -->
+        </select>
+        <label for="type">Tipo de Arte:</label>
+        <select id="type">
+          <option value="todos">Todos</option>
+          <option value="pintura">Pintura</option>
+          <option value="escultura">Escultura</option>
+          <option value="orfebreria">Orfebrería</option>
+          <!-- Agrega más opciones de tipos de arte aquí -->
+        </select>
+      </div>
+      <div class="gallery">
+        <!-- Obras de Arte -->
+        <div class="card" data-artist="picasso" data-type="pintura">
+          <img src="imagen1.jpg" alt="Obra 1">
+          <h3>Nombre Obra 1</h3>
+          <p>Descripción de la obra de arte.</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="card" data-artist="vangogh" data-type="pintura">
+          <img src="imagen2.jpg" alt="Obra 2">
+          <h3>Nombre Obra 2</h3>
+          <p>Descripción de la obra de arte.</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div class="card" data-artist="vangogh" data-type="escultura">
+          <img src="imagen3.jpg" alt="Obra 3">
+          <h3>Nombre Obra 3</h3>
+          <p>Descripción de la obra de arte.</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <!-- Agrega más obras de arte aquí con el atributo data-artist y data-type correspondiente -->
+      </div>
 
 </body>
 </html>

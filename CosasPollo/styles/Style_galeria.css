@@ -1,0 +1,41 @@
+/* Estilos para la galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .card {
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%; /* Máximo ancho del contenedor */
+    max-height: 200px; /* Máximo alto deseado */
+    height: auto; /* Para mantener la proporción de la imagen */
+  }
+  
+  /* Estilos adicionales para la tarjeta */
+  .card h3 {
+    margin-top: 10px;
+  }
+  
+  .card p {
+    margin: 10px 0;
+  }
+  
+  .card .add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
