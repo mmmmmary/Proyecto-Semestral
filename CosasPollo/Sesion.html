@@ -1,25 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Galery</title>
-
-    <!--linkcsshtmlbotstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!--scriptjavabotstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    <!--linkhojaestilo-->
-    <link rel="stylesheet" href="styles/Style_sesion.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Inicio de Sesión</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-
 <body>
+     <!--navbar-->
+  <header class="container-fluid bg-primary d-flex " >
+    <p> GroundZero@protonmail.com </p>
+  </header>
 
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-3" id="menu1">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+        <span class="text-primary fs-5 fw-bold">GroundZero</span>
+      
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Artistas.html">Artistas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Nosotros.html">Sobre nosotros</a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Obras
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Galeria.html">Escultura</a></li>
+              <li><a class="dropdown-item" href="Galeria.html">Tejidos</a></li>
+              <li><a class="dropdown-item" href="Galeria.html">Orfebrería</a></li>
+              <li><a class="dropdown-item" href="Galeria.html">Pinturas</a></li>
+              <li><a class="dropdown-item" href="Galeria.html">Otros</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Sesion.html">Iniciar sesion</a>
+          </li>   
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="text" placeholder="Nosequesepuedebuscarxd" aria-label="Search">
+          <button class= "btn btn-primary btn-primary-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center mb-4">Iniciar Sesión</h2>
+            <form id="inicioSesionForm">
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" class="form-control" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+            </form>
+            <p class="mt-3 text-center">¿No tienes cuenta? <a href="Crear_usuario.html">Crear una</a></p>
+        </div>
+    </div>
+</div>
+
+<script>
+document.getElementById('inicioSesionForm').addEventListener('submit', function(event) {
+    var correo = document.getElementById('correo').value;
+    var contrasena = document.getElementById('contrasena').value;
+
+    if (!validarCorreo(correo)) {
+        alert('Por favor ingresa un correo electrónico válido.');
+        event.preventDefault();
+    } else if (!validarContrasena(contrasena)) {
+        alert('La contraseña debe contener al menos 6 caracteres y al menos una mayúscula.');
+        event.preventDefault();
+    }
+});
+
+function validarCorreo(correo) {
+    return correo.includes('@');
+}
+
+function validarContrasena(contrasena) {
+    return contrasena.length >= 6 && /[A-Z]/.test(contrasena);
+}
+</script>
 
 </body>
 </html>
- 
