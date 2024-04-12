@@ -1,4 +1,24 @@
 /* Estilos para la galería */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/*===================MENU==========================*/
+
+ #menu a, button{
+     font-size: 18px !important;
+     font-weight: 600;
+    
+ }
+
+ #menu a{
+     color:#3f3f3f;
+     
+ }
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -39,3 +59,11 @@
     cursor: pointer;
     border-radius: 5px;
   }
+  .filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.filters label, .filters select {
+    display: inline-block;
+    margin-right: 10px;
+}
