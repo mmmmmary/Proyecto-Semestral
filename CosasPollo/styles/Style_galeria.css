@@ -34,16 +34,7 @@ footer p {
     color: #f3f3f3;
 }
 
-/*===================MENU==========================*/
 
-#menu a, button {
-    font-size: 18px !important;
-    font-weight: 600;
-}
-
-#menu a {
-    color: #3f3f3f;
-}
 
 .gallery {
     display: grid;
@@ -58,17 +49,17 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
-    border: 1px solid #e0e0e0; /* Añade un borde para mejorar la apariencia */
-    border-radius: 8px; /* Añade bordes redondeados */
-    overflow: hidden; /* Evita que el contenido desborde */
+    height: 100%; 
+    border: 1px solid #e0e0e0;
+    border-radius: 8px; 
+    overflow: hidden; 
 }
 
 .card img {
     max-width: 100%;
     max-height: 200px;
     height: auto;
-    object-fit: cover; /* Ajusta la imagen para que cubra el espacio sin deformarse */
+    object-fit: cover; 
 }
 
 .card h3 {
@@ -93,7 +84,7 @@ footer p {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
-    align-self: flex-end; /* Alinea el botón "Agregar al carrito" hacia abajo */
+    align-self: flex-end; 
 }
 
 .filters {
