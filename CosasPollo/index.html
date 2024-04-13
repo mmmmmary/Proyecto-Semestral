@@ -1,18 +1,23 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    
     <link rel="stylesheet" href="styles/style_index.css">
 
-    <title>GroundZero.</title>
+    <title>GroundZero</title>
   </head>
   <body>
+
+
   <!--========================================================== -->
                         <!-- ENCABEZADO -->
   <!--========================================================== -->
@@ -36,13 +41,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#equipo">Artistas</a>
+                <a class="nav-link" href="Artistas.html">Artistas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#seccion-contacto">Nosotros</a>
+                <a class="nav-link" href="Nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,11 +64,11 @@
                   Obras
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Pinturas</a></li>
-                  <li><a class="dropdown-item" href="#">Orfebrería</a></li>
-                  <li><a class="dropdown-item" href="#">Pinturas</a></li>
-                  <li><a class="dropdown-item" href="#">Tejidos</a></li>
-                  <li><a class="dropdown-item" href="#">Otros</a></li>
+                  <li><a class="dropdown-item" href="Galeria.html">Pinturas</a></li>
+                  <li><a class="dropdown-item" href="Galeria.html">Orfebrería</a></li>
+                  <li><a class="dropdown-item" href="Galeria.html">Pinturas</a></li>
+                  <li><a class="dropdown-item" href="Galeria.html">Tejidos</a></li>
+                  <li><a class="dropdown-item" href="Galeria.html">Otros</a></li>
                 </ul>
               </li>
             </ul>
@@ -78,6 +83,8 @@
 
         </div>
       </nav>
+
+
 
     <!--========================================================== -->
                         <!-- SLIDER DE IMAGENES-->
@@ -115,7 +122,7 @@
         
      
     <!--========================================================== -->
-                        <!-- INTRODUCCION DE SERVICIOS-->
+                       
     <!--========================================================== -->
 
 
@@ -127,7 +134,7 @@
     </section>
 
    <!--========================================================== -->
-                        <!-- TIPOS DE SERVICIOS-->
+                      
     <!--========================================================== -->
 
 
@@ -175,8 +182,9 @@
 </section>
 
 <!--========================================================== -->
-                        <!-- SECCION ACERCA DE NOSOTROS-->
+                        
 <!--========================================================== -->
+
 
 <section>
     <div class="container w-50 m-auto text-center" id="equipo">
@@ -187,6 +195,8 @@
     <div class="mt-5 text-center">
         <img id="img-equipo" src="imagenes/tempaint.png.jpg" alt="pintura" width="320px" height="400px"  >
     </div>
+    <br>
+    <br>
 
     <div id="local" class="border-top border-2">
         <div class="mapa"> </div>
@@ -196,18 +206,6 @@
                 <h2 class="text-primary mb-4" id="typewriter"></h2>
                 <p class="fs-5 text-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aperiam nihil dolorum velit cupiditate enim cumque architecto perspiciatis aspernatur. Fugiat alias ullam culpa dolore sit expedita officia ducimus recusandae dolores?</p>
                 <section class="d-flex justify-content-start" id="numeros-local">
-                    <div>
-                        <p class="text-primary fs-5">200</p>
-                        <p>Dias de Sol</p>
-                    </div>
-                    <div>
-                        <p class="text-primary fs-5">100%</p>
-                        <p>Aprobado</p>
-                    </div>
-                    <div>
-                        <p class="text-primary fs-5">24 °C</p>
-                        <p>Temperatura</p>
-                    </div>
               </section>
             </div>
         </div>
@@ -217,11 +215,13 @@
 
 
 <!--========================================================== -->
-                        <!-- SECCION CONTACTOS-->
+                      <!--Contacto-->
 <!--========================================================== -->
 
 <section id="seccion-contacto" class="border-bottom border-secondary border-2">
   <div id="bg-contactos">
+
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1b2a4e" fill-opacity="1" d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
   </div>
 
@@ -251,7 +251,7 @@
       
 
             <div class="mb-3">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono">
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Telefono">
             </div>
 
           <div class="mb-3">       
@@ -262,6 +262,9 @@
             <button type="submit" class=" btn btn-primary w-100 fs-5">Enviar Mensaje</button>
           </div>
       </form>
+
+
+      
   
   </div>
 </section>
@@ -281,9 +284,11 @@
   </div>
 </footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> 
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="main.js"></script>
+    <!--Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+   
+
+    
   </body>
 </html>
