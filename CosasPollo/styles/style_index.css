@@ -45,11 +45,7 @@ body {
     padding-bottom: 300px; 
 }
 
-.mapa {
-    background: url(../imagenes/mapa.jpg.jfif);
-    width:100%;
-    height:500px;
-}
+
 
 
 .wrapper-local {
@@ -60,26 +56,7 @@ body {
 
 
 /*===========================SECCION EQUIPO MIAMI==================================*/
-#numeros-local{
-    margin:0 !important;
-    padding:0 !important;
-}
-#numeros-local div {
-    padding: 0 20px 0 0;   
-    text-align:left;
-    height:48px;
-}
 
-#numeros-local div:not(:last-child) {
-    border-right: 2px solid #3f3f3f;
-  }
-#numeros-local div:not(:first-child) {
-    padding-left:20px;
-  }
-
-#numeros-local p{
-    margin:0;
-}
 
 /*=========================CONTACTOS BACKGROUND================================*/
 
