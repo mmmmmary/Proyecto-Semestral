@@ -30,10 +30,14 @@
   <!--========================================================== -->
                         <!-- ENCABEZADO -->
   <!--========================================================== -->
+
+  
+    
+
   <header class="container-fluid bg-primary d-flex justify-content-between">
     <p class="text-light mb-0 p-2 fs-6 mr-auto">GroundZero.info@gmail.com</p>
     <p class="text-light mb-0 p-2 fs-6">+56 9 XXXX XXXX</p>
-</header>
+  </header>
 
     <nav  class="navbar navbar-expand-lg navbar-light p-3"  id="menu">
         <div class="container">
@@ -75,7 +79,7 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="Galeria.html">Pinturas</a></li>
                   <li><a class="dropdown-item" href="Galeria.html">Orfebrería</a></li>
-                  <li><a class="dropdown-item" href="Galeria.html">Pinturas</a></li>
+                  <li><a class="dropdown-item" href="Galeria.html">Esculturas</a></li>
                   <li><a class="dropdown-item" href="Galeria.html">Tejidos</a></li>
                   <li><a class="dropdown-item" href="Galeria.html">Otros</a></li>
                 </ul>
@@ -98,43 +102,44 @@
     <!--========================================================== -->
                         <!-- SLIDER DE IMAGENES-->
     <!--========================================================== -->
-   
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img src="imagenes/paintingange.jpg.jpg" class="d-block w-100" alt="Imagen no disponible" height="650px">
-          </div>
-          
- 
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="imagenes/paintingbar.jpg.jpg" class="d-block w-100" alt="Imagen no disponible" height="650px">
-          </div>
- 
+    <div class="container justify-content-center " id="container-carrousel" >
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
 
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="imagenes/paintingove.jpg.jpg" class="d-block w-100" alt="Imagen no disponible" height="650px">
+          <div class="carousel-inner">
+            <div class="carousel-item active justify-content-center" data-bs-interval="3000">
+              <img src="imagenes/paintingange.jpg.jpg" class="img-carrusel" alt="Imagen no disponible" >
+            </div>
             
+  
+            <div class="carousel-item justify-content-center" data-bs-interval="3000">
+              <img src="imagenes/paintingbar.jpg.jpg" class="img-carrusel" alt="Imagen no disponible" ">
+            </div>
+  
+
+            <div class="carousel-item justify-content-center" data-bs-interval="3000">
+              <img src="imagenes/paintingove.jpg.jpg" class="img-carrusel" alt="Imagen no disponible" >
+            </div>
           </div>
- 
- 
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>    
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        
+        
+        </div>  
+    </div>  
     
         
      
-    <!--========================================================== -->
-                       
-    <!--========================================================== -->
 
-
+    <!--========================================================== -->
+              <!-- subtexto          -->
+    <!--========================================================== -->
     <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
     <h1 class="p-3 fs-2 border-top border-3">Una tienda de arte unica para encontrar obras de arte de todo tipo</h1>
      <p class="p-3  fs-4">
@@ -142,59 +147,71 @@
      </p>   
     </section>
 
+
    <!--========================================================== -->
-                      
+                      <!-- Servicios -->
     <!--========================================================== -->
 
 
-<section class="w-100">
-    <div class="row w-75 mx-auto" id="servicios-fila-1">       
-        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
-            <img src="imagenes/tamara-menzi-n-vnWQmmVoY-unsplash.jpg" alt="Pinturas"   width="180" height="160">
-
-            <div>
-                <h3 class="fs-5 mt-4 px-4 pb-1">Pinturas</h3>
-                <p class="px-4">Pinturas de todo tipo</p>
+    <!-- Servicios -->
+    <section class="servicios seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Tejidos -->
+          <div class="columna col-12 col-md-3">
+            <i class="bi bi-scissors"></i>
+            <p class="servicios-titulo">Tejidos</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">NOMBRE ARTISTA DESTACADO</span>
+              
             </div>
+          </div>
+          <!-- Orfebreria -->
+          <div class="columna col-12 col-md-3">
+            <i class="bi bi-brush"></i>
+            <p class="servicios-titulo">Orfebreria</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">NOMBRE  ARTISTA DESTACADO</span>
+              <span class="badge text-bg-primary">NOMBRE  ARTISTA DESTACADO</span>
+              
+             
+            </div>
+          </div>
 
+          <!-- Esculturas-->
+          <div class="columna col-12 col-md-3">
+            <i class="bi bi-tools"></i>
+            <p class="servicios-titulo">Esculturas</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">NOMBRE ARTISTA DESTACADO</span>
+              <span class="badge text-bg-primary">NOMBRE  ARTISTA DESTACADO</span>
+            </div>
+          </div>
+
+          <!-- Pinturas -->
+          <div class="columna col-12 col-md-3">
+            <i class="bi bi-palette"></i>
+            <p class="servicios-titulo">Pinturas</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">NOMBRE ARTISTA DESTACADO</span>
+              <span class="badge text-bg-primary">NOMBRE  ARTISTA DESTACADO</span>
+              
+            </div>
+          </div>
         </div>
-
-        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
-            <img src="imagenes/fbria.jpg" alt="Orfebrería" width="180" height="160">
-
-            <div>
-                <h3 class="fs-5 mt-4 px-4 pb-1 icono-wrap">Orfebrería</h3>
-                <p class="px-4">La mejor artesania</p>
-            </div>
-        </div>   
-    </div>
-    
-    <div class="row w-75 mx-auto mb-5" id="servicios-fila-2">       
-        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start  my-5 icono-wrap">
-            <img src="imagenes/escultura.jpeg" alt="Esculturas" width="180" height="160">
-
-            <div>
-                <h3 class="fs-5 mt-4 px-4 pb-1">Esculturas</h3>
-                <p class="px-4">Esculturas hechas a mano</p>
-            </div>
-        </div>
-
-        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
-            <img src="imagenes/tejido.jpg" alt="Tejidos" width="180" height="160" >
-
-            <div>
-                <h3 class="fs-5 mt-4 px-4 pb-1">Tejidos</h3>
-                <p class="px-4">Tejidos hecho por distinguidos artistas</p>
-            </div>
-        </div>   
-    </div>
-</section>
+      </div>
+    </section>
 
 <!--========================================================== -->
-                        
+                        <!-- Artistas -->
 <!--========================================================== -->
+<br>
 
-
+<br>
 <section>
     <div class="container w-50 m-auto text-center" id="equipo">
         <h1 class="mb-5 fs-2">Artistas de todo tipo de <span class="text-primary"> excelente calidad</span>.</h1>
@@ -202,7 +219,7 @@
     </div>
 
     <div class="mt-5 text-center">
-        <img id="img-equipo" src="imagenes/tempaint.png.jpg" alt="pintura" width="320px" height="400px"  >
+        <img id="img-equipo" src="imagenes/tempaint.png.jpg" alt="pintura" width="400px" height="400px"  >
     </div>
     <br>
     <br>
@@ -211,7 +228,7 @@
       <!-- <div id="map" style="height: 400px;"></div> -->
         <div>
             <div class="wrapper-local">
-              <div id="map" style="height: 400px;"></div>
+              <div id="map" style="height: 400px; display: flex; justify-content: center;" ></div>
                 <h2>Ubicados en Santigo </h2>
                 <h2 class="text-primary mb-4" id="typewriter"></h2>
                 <p class="fs-5 text-body">!Ven a visitarnos¡ Nos encontramos en un lugar privilegiado a pocos pasos de varias estaciones de metro</p>
@@ -294,6 +311,8 @@
   </div>
 </footer>
 
+
+
     <!--Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
@@ -312,6 +331,8 @@
       
   </script>
    
+
+   <script src="scripts.js/scripts.js"></script>
 
     
   </body>

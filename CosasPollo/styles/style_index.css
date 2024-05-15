@@ -26,14 +26,14 @@ body {
     max-height:39rem !important;
 }
 
-/*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
+/*===================imagenes seccion servicios==========================*/
 
 
 
-#img-equipo{
+/* #img-equipo{
     max-height:30rem !important;
     width:50%;
-}
+} */
 
 
 /*===================SECCION NUESTRO EQUIPO MAPA==========================*/
@@ -197,3 +197,60 @@ footer p{
         text-align: center;
     }
 }
+
+.img-carrusel{
+    width: 600px;
+    height: 600px;
+
+}
+
+/* /* #container-carrousel{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+    
+    position: relative;
+    margin-left: auto; /* Margen izquierdo automático */
+    
+
+servicios.servicios {
+    padding: 40px 40px 60px 40px;
+    }
+    
+    .servicios .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+    }
+    
+    .servicios .columna:hover {
+    color: white;
+    background-color: #1b1b32;
+    }
+    
+    .servicios i {
+    font-size: 2.5rem;
+    padding: 8px 19px;
+    border-radius: 50%;
+    }
+    
+    .servicios-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+    }
+    
+    .badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    }
+    
+    .badge {
+    margin: 5px;
+    }
