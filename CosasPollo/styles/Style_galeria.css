@@ -1,40 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+/* CSS global */
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
 
-/*===================MENU==========================*/
-
-#menu a, button {
-    font-size: 18px !important;
+/* Estilos para el navbar */
+.gallery-header {
+    background-color: #1b2a4e;
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif; /* Agregamos esta regla para asegurar la misma fuente */
+}
+.gallery-header a {
+    color: #f3f3f3;
     font-weight: 600;
 }
 
-#menu a {
-    color: #3f3f3f;
+.gallery-header a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
-/*=========================FOOTER================================*/
-
-footer {
-    background: #1b2a4e;
-    min-height: 100px;
-}
-
-footer p {
-    color: #f3f3f3;
+/* Estilos para el contenido de la galería */
+.filters {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-#iconos i {
-    font-size: 26px;
-    padding: 0 8px;
-    color: #f3f3f3;
+.filters label, .filters select {
+    display: inline-block;
+    margin-right: 10px;
 }
-
-
 
 .gallery {
     display: grid;
@@ -87,12 +83,19 @@ footer p {
     align-self: flex-end; 
 }
 
-.filters {
-    text-align: center;
-    margin-bottom: 20px;
+/* Estilos para el footer */
+.footer {
+    background: #1b2a4e;
+    min-height: 100px;
 }
 
-.filters label, .filters select {
-    display: inline-block;
-    margin-right: 10px;
+.footer p {
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
+    color: #f3f3f3;
 }

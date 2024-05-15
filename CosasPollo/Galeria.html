@@ -12,18 +12,13 @@
     <!--scriptjavabotstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 
     <!--linkhojaestilo-->
     <link rel="stylesheet" href="styles/Style_galeria.css">
 
 </head>
 <body>
-  <header>
-    
-  </header>
-
-
+  <header></header>
 
 
       <!------------------------------------------------------------>
@@ -119,41 +114,16 @@
         </div>
       </div>
       <!--js para filtros-->
-      <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var artistSelect = document.getElementById("artist");
-            var typeSelect = document.getElementById("type");
-            var cards = document.querySelectorAll(".card");
-
-            artistSelect.addEventListener("change", function() {
-                filterCards();
-            });
-
-            typeSelect.addEventListener("change", function() {
-                filterCards();
-            });
-
-            function filterCards() {
-                var artist = artistSelect.value;
-                var type = typeSelect.value;
-
-                cards.forEach(function(card) {
-                    var cardArtist = card.getAttribute("data-artist");
-                    var cardType = card.getAttribute("data-type");
-
-                    if ((artist === "todos" || cardArtist === artist) && (type === "todos" || cardType === type)) {
-                        card.style.display = "block";
-                    } else {
-                        card.style.display = "none";
-                    }
-                });
-            }
-        });
-    </script>
-    <script src="scripts.js/scripts.js"></script>
-    
+      <script src="scripts.js/galeria.js"></script>
+      <script src="scripts.js/scripts.js"></script>
 </body>
-<footer ></footer>
-
+<footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+  <p class="fs-5 px-3  pt-3">GroundZero &copy; Todos Los Derechos Reservados 2024</p>
+  <div id="iconos" >
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>  
+  </div>
+</footer>
 
 </html>
