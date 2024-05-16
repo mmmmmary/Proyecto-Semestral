@@ -40,33 +40,10 @@ footer p{
 
 
 
-/*===================SLIDER DE IMAGENES==========================*/
-
-.carousel-inner {
-    max-height:39rem !important;
-}
-
-/*===================imagenes seccion servicios==========================*/
-
-
-
-/* #img-equipo{
-    max-height:30rem !important;
-    width:50%;
-} */
-
-
-/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
 
 
 
 
-
-.wrapper-local {
-    width:50%;
-    margin-left:100px;
-    padding-top:150px;
-}
 
 
 /*=============================================================*/
@@ -304,7 +281,7 @@ footer p{
   align-items: center;
 }
 
-.contacto .descripcion {
+/* .contacto .descripcion {
   color: white;
   font-size: 1.2rem;
 }
@@ -318,9 +295,9 @@ footer p{
   margin: 10px;
   border-radius: 100px;
   transition: all 0.2s ease-in-out;
-}
+} */
 
-.contacto button:hover {
+/* .contacto button:hover {
   background-color: white;
   color: black;
 }
@@ -333,7 +310,7 @@ footer p{
 
 .contacto button:hover i {
   color: black;
-}
+} */
 
 
 
