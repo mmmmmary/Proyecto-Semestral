@@ -20,6 +20,26 @@ body {
      color:#3f3f3f;
      
  }
+
+ 
+/*=========================FOOTER================================*/
+
+footer {
+    background: #1b2a4e;
+    min-height: 100px;;
+}
+footer p{
+    color:#f3f3f3;
+    text-align:center;
+}
+#iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+
+
+
 /*===================SLIDER DE IMAGENES==========================*/
 
 .carousel-inner {
@@ -37,13 +57,7 @@ body {
 
 
 /*===================SECCION NUESTRO EQUIPO MAPA==========================*/
-#local {
-    margin-top:50px;
-    background-color: #f3f3f3;
-    display:flex;
-    justify-content: center; 
-    padding-bottom: 300px; 
-}
+
 
 
 
@@ -55,7 +69,7 @@ body {
 }
 
 
-/*===========================SECCION EQUIPO MIAMI==================================*/
+/*=============================================================*/
 
 
 /*=========================CONTACTOS BACKGROUND================================*/
@@ -90,21 +104,6 @@ body {
 
 
 
-/*=========================FOOTER================================*/
-
-footer {
-    background: #1b2a4e;
-    min-height: 100px;;
-}
-footer p{
-    color:#f3f3f3;
-    text-align:center;
-}
-#iconos  i {
-    font-size: 26px;
-    padding: 0 8px;
-    color:#f3f3f3;
-}
 
 /*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
 
@@ -176,11 +175,7 @@ footer p{
 }
 
 
-.img-carrusel{
-    width: 600px;
-    height: 600px;
 
-}
 
 /* /* #container-carrousel{
     display: flex;
@@ -246,3 +241,292 @@ footer p{
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 1); 
 }
           
+
+.testimonios {
+  padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+  max-width: 800px;
+}
+
+
+
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonio-info p {
+  margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+  font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+  font-size: 0.9rem;
+  color: #656060;
+}
+
+/* Contacto */
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: rgb(13, 110, 253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: black;
+}
+
+
+
+/* carrusel*/
+.testimonios {
+    padding: 40px 40px 80px 40px;
+  }
+  
+  .testimonios .carousel {
+    max-width: 800px;
+  }
+  
+  .carousel-item {
+    height: 500px;
+  }
+  
+  .carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .testimonio-imagen {
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+  }
+  
+  .testimonio-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
+  .testimonio-info {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .testimonio-info p {
+    margin-bottom: 0;
+  }
+  
+  .testimonio-footer .cliente {
+    font-size: 1.2rem;
+  }
+  
+  .testimonio-info .cargo {
+    font-size: 0.9rem;
+    color: #656060;
+  }
+  
+  /* Contacto */
+  
+  .contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+  }
+  
+  .contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+  }
+  
+  .contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contacto .descripcion {
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contacto button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contacto button:hover i {
+    color: black;
+  }
+
+
+
+
+  /* .img-carrusel{
+    width: 600px;
+    height: 600px;
+
+}
+.carousel-item {
+    height: 500px;
+  }
+  
+  .carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  /* carrusel */
+
+  .testimonios {
+    padding: 40px 40px 80px 40px;
+  }
+  
+  .testimonios .carousel {
+    max-width: 800px;
+  }
+  
+  .carousel-item {
+    height: 500px;
+  }
+  
+  .carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .testimonio-imagen {
+    height: 200px;
+    width: 200px;
+    margin: 10px 10px 20px 10px;
+  }
+  
+  .testimonio-texto {
+    max-width: 90%;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
+  .testimonio-info {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .testimonio-info p {
+    margin-bottom: 0;
+  }
+  
+  .testimonio-footer .cliente {
+    font-size: 1.2rem;
+  }
+  
+  .testimonio-info .cargo {
+    font-size: 0.9rem;
+    color: #656060;
+  }
+  
+
+
+  
+  /* Contacto */
+  
+  
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }

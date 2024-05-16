@@ -34,40 +34,59 @@
 
 
 
-    <!--========================================================== -->
-                        <!-- SLIDER DE IMAGENES-->
-    <!--========================================================== -->
-    <div class="container justify-content-center " id="container-carrousel" >
-      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-
-          <div class="carousel-inner">
-            <div class="carousel-item active justify-content-center" data-bs-interval="3000">
-              <img src="imagenes/paintingange.jpg.jpg" class="img-carrusel" alt="Imagen no disponible" >
-            </div>
-            
+  <br>
+  <br>
+  <br>
   
-            <div class="carousel-item justify-content-center" data-bs-interval="3000">
-              <img src="imagenes/paintingbar.jpg.jpg" class="img-carrusel" alt="Imagen no disponible" ">
-            </div>
-  
-
-            <div class="carousel-item justify-content-center" data-bs-interval="3000">
-              <img src="imagenes/paintingove.jpg.jpg" class="img-carrusel" alt="Imagen no disponible" >
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Obras Destacadas</h2>
+      <h3 class="seccion-descripcion">Obras destacadas de la semana</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imgObras/Madonna_michelangelo1.jpg" alt="imgobra">
+              <p class="testimonio-texto">[DESCRIPCION DE LA OBRA] Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio alias officia. Ullam nemo explicabo pariatur voluptatem.</p>
+              <div class="testimonio-info">
+                <p class="cliente">[Nombre Artista]</p>
+                <p class="cargo">Pintura</p>
+              </div>
             </div>
           </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        
-        
-        </div>  
-    </div>  
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imgObras/van-gogh-s-bedroom-in-arles-1889-1646929996.jpg" alt="imgobra">
+              <p class="testimonio-texto">[DESCRIPCION DE LA OBRA]Lorem ipsum dolor sit amet, sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">[Nombre Artista]</p>
+                <p class="cargo">Pintura</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imgObras/unnamed.jpg" alt="imgobra">
+              <p class="testimonio-texto">[DESCRIPCION DE LA OBRA]Lorem ipsum dolor sit amet. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">[Nombre Artista]</p>
+                <p class="cargo">Escultura</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
     
         
      
@@ -180,10 +199,10 @@
     <div class="col-md-6">
       <div class="card">
         <div class="card-header">
-          Ubicacion
+          ¿Donde nos ubicamos?
         </div>
         <div class="card-body">
-          <h5 class="card-title">Ubicacion</h5>
+          <h5 class="card-title ">Calle xxxxxxxxxx</h5>
           <div id="map" style="width: 100%; height: 300px;"></div>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           
@@ -289,6 +308,7 @@
     </script>
    
    <script src="scripts.js/scripts.js"></script>
+   <script src="scripts.js/api.js"></script>
 
     
   </body>

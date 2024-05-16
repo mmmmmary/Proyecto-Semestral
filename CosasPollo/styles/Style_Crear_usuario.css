@@ -1,9 +1,28 @@
+/*===============Propiedades Globales================*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
+
+
+/*===================MENU==========================*/
+
+ #menu a, button{
+     font-size: 18px !important;
+     font-weight: 600;
+    
+ }
+
+ #menu a{
+     color:#3f3f3f;
+     
+ }
+
+ 
+/*=========================FOOTER================================*/
 
 footer {
     background: #1b2a4e;
@@ -18,17 +37,5 @@ footer p{
     padding: 0 8px;
     color:#f3f3f3;
 }
-
-#menu a, button{
-     font-size: 18px !important;
-     font-weight: 600;
-    
- }
-
- #menu a{
-     color:#3f3f3f;
-     
- }
-
 
 
