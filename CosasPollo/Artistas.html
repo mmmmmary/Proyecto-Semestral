@@ -37,30 +37,64 @@
 <!--========================================================== -->
 
 <section>
-    <h1 class="text-center my-5">Nuestros Artistas</h1>
-    <div class="container">
-        <div class="image-container">
-          <img src="imgArtistas/artista1.jpg" alt="Vicente Van Gogh" class="img-thumbnail" id="popoverImage1">
-          <div class="popover-container" id="popoverContainer1" style="display: none;">
-            <h6>El Maestro de los Girasoles</h6>
-            <p>Vincent van Gogh sigue cautivando con su arte emotivo y distintivo, inspirando a generaciones con su pasión por la pintura y su amor por la naturaleza. Su legado continúa vivo, recordándonos la importancia de expresar nuestras emociones a través del arte..</p>
-          </div>
-        </div>
-        <div class="image-container">
-          <img src="imgArtistas/artista2.jpg" alt="Miguel Angel" class="img-thumbnail" id="popoverImage2">
-          <div class="popover-container" id="popoverContainer2" style="display: none;">
-            <h6>El Escultor Divino</h6>
-            <p>Reconocido por su genio escultórico y su visión artística sin igual, Miguel Ángel es venerado como uno de los mayores artistas renacentistas. Su habilidad para dar vida a la piedra y su dedicación a la perfección técnica lo han convertido en una figura legendaria en la historia del arte.</p>
-          </div>
-        </div>
-        <div class="image-container">
-          <img src="imgArtistas/artista3.jpg" alt="Frida Khalo" class="img-thumbnail" id="popoverImage3">
-          <div class="popover-container" id="popoverContainer3" style="display: none;">
-            <h6>La Pintora de las Emociones</h6>
-            <p>Cautiva con su arte singular y su capacidad para plasmar su mundo interior en el lienzo. Su legado perdura, inspirando a generaciones con su valentía para enfrentar el dolor y su celebración de la vida a través del arte.</p>
-          </div>
-        </div>
+  <h1 class="text-center my-5">Nuestros Artistas</h1>
+  <div class="container">
+      <div class="image-container">
+          <img src="imgArtistas/artista1.jpg" alt="Vicente Van Gogh" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modalArtista1">
       </div>
+      <div class="image-container">
+          <img src="imgArtistas/artista2.jpg" alt="Miguel Angel" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modalArtista2">
+      </div>
+      <div class="image-container">
+          <img src="imgArtistas/artista3.jpg" alt="Frida Khalo" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modalArtista3">
+      </div>
+  </div>
+
+  <!-- Modales -->
+  <!-- Modal Artista 1 -->
+  <div class="modal fade" id="modalArtista1" tabindex="-1" aria-labelledby="modalArtista1Label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modalArtista1Label">Vicente Van Gogh</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <p>Vincent van Gogh sigue cautivando con su arte emotivo y distintivo, inspirando a generaciones con su pasión por la pintura y su amor por la naturaleza. Su legado continúa vivo, recordándonos la importancia de expresar nuestras emociones a través del arte.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal Artista 2 -->
+  <div class="modal fade" id="modalArtista2" tabindex="-1" aria-labelledby="modalArtista2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalArtista2Label">Miguelangelo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Reconocido por su genio escultórico y su visión artística sin igual, Miguel Ángel es venerado como uno de los mayores artistas renacentistas. Su habilidad para dar vida a la piedra y su dedicación a la perfección técnica lo han convertido en una figura legendaria en la historia del arte.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Modal Artista 3 -->
+  <div class="modal fade" id="modalArtista3" tabindex="-1" aria-labelledby="modalArtista3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalArtista3Label">Frida Khalo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Conocida cariñosamente como "La Pintora de las Emociones", Frida Kahlo sigue cautivando con su arte audaz y su expresión personal única. Su capacidad para transmitir sus experiencias y emociones a través de sus pinturas la convierte en una figura inspiradora para aquellos que buscan autenticidad y valor en el arte y la vida misma.</p>
+            </div>
+        </div>
+    </div>
+</div>
     </section>      
 
 
@@ -73,30 +107,8 @@
       </footer>
       
       
-<script>
-
-document.getElementById('popoverImage1').addEventListener('click', togglePopover1);
-document.getElementById('popoverImage2').addEventListener('click', togglePopover2);
-document.getElementById('popoverImage3').addEventListener('click', togglePopover3);
-
-function togglePopover1() {
-  togglePopover('popoverContainer1');
-}
-
-
-function togglePopover2() {
-  togglePopover('popoverContainer2');
-}
-
-function togglePopover3() {
-  togglePopover('popoverContainer3');
-}
-
-function togglePopover(containerId) {
-  var popoverContainer = document.getElementById(containerId);
-  popoverContainer.style.display = popoverContainer.style.display === 'none' ? 'block' : 'none';
-}
-</script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <script src="scripts.js/scripts.js"></script>
 
 
