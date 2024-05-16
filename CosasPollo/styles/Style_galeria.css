@@ -37,9 +37,17 @@ footer p{
     padding: 0 8px;
     color:#f3f3f3;
 }
+/* ----------- */
 
+.gallery-header a {
+    color: #f3f3f3;
+    font-weight: 600;
+}
 
-
+.gallery-header a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
 
 /* Estilos para el contenido de la galería */
 .filters {

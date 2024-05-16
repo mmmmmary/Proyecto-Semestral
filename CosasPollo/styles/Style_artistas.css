@@ -10,13 +10,14 @@ body {
 
 /*===================MENU==========================*/
 
- #menu a, button{
+#menu a, button{
      font-size: 18px !important;
      font-weight: 600;
     
  }
 
- #menu a{
+
+#menu a{
      color:#3f3f3f;
      
  }
