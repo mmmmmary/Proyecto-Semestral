@@ -40,18 +40,7 @@ footer p{
 }
 
 
-/*===================MENU==========================*/
 
- #menu a, button{
-     font-size: 18px !important;
-     font-weight: 600;
-    
- }
-
- #menu a{
-     color:#3f3f3f;
-     
- }
 
  .container {
   position: relative;
@@ -82,4 +71,12 @@ footer p{
   border-radius: 5px;
   z-index: 1000;
 }
+
+section {
+  height: 600px; /* Altura fija deseada */
+}
+
+
+
+
 
