@@ -11,6 +11,7 @@ body {
     padding: 10px 0;
     font-family: 'Montserrat', sans-serif; /* Agregamos esta regla para asegurar la misma fuente */
 }
+
 .gallery-header a {
     color: #f3f3f3;
     font-weight: 600;

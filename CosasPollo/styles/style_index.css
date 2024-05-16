@@ -175,6 +175,7 @@ footer p{
     }
 }
 
+
 .img-carrusel{
     width: 600px;
     height: 600px;
@@ -191,7 +192,7 @@ footer p{
     margin-left: auto; /* Margen izquierdo automático */
     
 
-servicios.servicios {
+.servicios {
     padding: 40px 40px 60px 40px;
     }
     
@@ -231,3 +232,17 @@ servicios.servicios {
     .badge {
     margin: 5px;
     }
+
+
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform .5s, box-shadow .5s; 
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 1); 
+}
+          
