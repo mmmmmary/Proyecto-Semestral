@@ -3,7 +3,8 @@ const header = document.querySelector("header")
 
 const footer = document.querySelector("footer");
 
-header.innerHTML=` <div class="container-fluid bg-primary d-flex justify-content-between">
+
+header.innerHTML=`<div class="container-fluid bg-primary d-flex justify-content-between">
 <p class="text-light mb-0 p-2 fs-6 mr-auto">GroundZero.info@gmail.com</p>
 <p class="text-light mb-0 p-2 fs-6">+56 9 XXXX XXXX</p>
 </div>

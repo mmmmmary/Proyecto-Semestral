@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const apiKey = '4f9dd43753400f080ec07dbab955a6ae'; // Sustituye con tu clave de API real
+    const apiKey = '4f9dd43753400f080ec07dbab955a6ae'; // claveapii weather
     const ciudad = 'Viña del mar';
     const pais = 'CL';
 
@@ -18,6 +18,20 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('wind').textContent = data.wind.speed;
         })
         .catch(error => console.error('Error fetching data: ', error));
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var map = L.map('map').setView([-33.4372, -70.6506], 13); 
+  
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+  
+    L.marker([-33.4372, -70.6506]).addTo(map) // Ccoorderandaschile
+      .bindPopup('¡Ground Zero!').openPopup(); // Popup 
 });
 
 

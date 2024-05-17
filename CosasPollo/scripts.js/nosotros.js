@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Itera sobre cada tarjeta y agrega los eventos mouseover y mouseout
     cards.forEach(function(card) {
         card.addEventListener('mouseover', function() {
-            // Aplica los estilos de la animación cuando el mouse está sobre la tarjeta
+            // estilos de la animación cuando el mouse está sobre la tarjeta
             this.style.transform = "scale(1.05)";
             this.style.transition = "transform 0.3s ease";
         });
