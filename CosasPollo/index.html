@@ -251,29 +251,25 @@
 
      
 
-      <form   method="POST" data-netlify="true" action="#">     
-            <div class= "mb-3">           
-              <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com">
-            </div>
- 
-          
-            <div class="mb-3">            
-              <input type="input" class="form-control" id="name" name="name" placeholder="John Doe">
-            </div>
-      
-
-            <div class="mb-3">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Telefono">
-            </div>
-
-          <div class="mb-3">       
-            <textarea class="form-control" name="message" id="message" rows="4"></textarea>
-          </div>
-
-          <div class="mb-3">
-            <button type="submit" class=" btn btn-primary w-100 fs-5">Enviar Mensaje</button>
-          </div>
+      <form id="contactForm" method="POST" data-netlify="true" action="#">
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
+        </div>
+        <div class="mb-3">
+          <input type="tel" class="form-control" name="phone" id="phone" placeholder="+56 9 ---- ----" required>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
+        </div>
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary w-100 fs-5">Enviar Mensaje</button>
+        </div>
       </form>
+      <script src="scripts.js/index.js"></script>
+      
 
 
       
@@ -296,7 +292,7 @@
     <!--script mapkick-->
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-        var map = L.map('map').setView([-33.4372, -70.6506], 13); // Coordenadas de Santiago, Chile
+        var map = L.map('map').setView([-33.4372, -70.6506], 13); 
       
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -309,6 +305,7 @@
    
    <script src="scripts.js/scripts.js"></script>
    <script src="scripts.js/api.js"></script>
+   <script src="scripts.js/index.js">  </script>
 
     
   </body>
