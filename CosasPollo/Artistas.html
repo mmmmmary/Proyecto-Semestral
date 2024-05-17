@@ -4,120 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Galery</title>
+    <title>Art Gallery</title>
 
-    <!--linkcsshtmlbotstrap-->
-
-
-    <!--p-->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/Style_artistas.css">
 
-    
-
-    <!--linkhojaestilo-->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/Style_artistas.css">
 </head>
 
 <body>
-    
-  <header>
 
-  </header>
-  
-      
+    <header>
+        <!-- Header content -->
+    </header>
 
+    <!--========================================================== -->
+    <!-- Sección artistas -->
+    <!--========================================================== -->
 
-  <!--========================================================== -->
-                        <!--Secccion artistas-->
-<!--========================================================== -->
-
-<section>
-  <h1 class="text-center my-5">Nuestros Artistas</h1>
-  <div class="container">
-      <div class="image-container">
-          <img src="imgArtistas/artista1.jpg" alt="Vicente Van Gogh" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modalArtista1">
-      </div>
-      <div class="image-container">
-          <img src="imgArtistas/artista2.jpg" alt="Miguel Angel" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modalArtista2">
-      </div>
-      <div class="image-container">
-          <img src="imgArtistas/artista3.jpg" alt="Frida Khalo" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modalArtista3">
-      </div>
-  </div>
-
-  <!-- Modales -->
-  <!-- Modal Artista 1 -->
-  <div class="modal fade" id="modalArtista1" tabindex="-1" aria-labelledby="modalArtista1Label" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" id="modalArtista1Label">Vicente Van Gogh</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <p>Vincent van Gogh sigue cautivando con su arte emotivo y distintivo, inspirando a generaciones con su pasión por la pintura y su amor por la naturaleza. Su legado continúa vivo, recordándonos la importancia de expresar nuestras emociones a través del arte.</p>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <!-- Modal Artista 2 -->
-  <div class="modal fade" id="modalArtista2" tabindex="-1" aria-labelledby="modalArtista2Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalArtista2Label">Miguelangelo</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <section>
+        <h1 class="text-center my-5">Nuestros Artistas</h1>
+        <div class="container d-flex flex-wrap justify-content-center">
+            <div class="image-container">
+                <img src="imgArtistas/artista1.jpg" alt="Vicente Van Gogh" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modalArtista1">
             </div>
-            <div class="modal-body">
-                <p>Reconocido por su genio escultórico y su visión artística sin igual, Miguel Ángel es venerado como uno de los mayores artistas renacentistas. Su habilidad para dar vida a la piedra y su dedicación a la perfección técnica lo han convertido en una figura legendaria en la historia del arte.</p>
+            <div class="image-container">
+                <img src="imgArtistas/artista2.jpg" alt="Miguel Angel" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modalArtista2">
+            </div>
+            <div class="image-container">
+                <img src="imgArtistas/artista3.jpg" alt="Frida Khalo" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#modalArtista3">
             </div>
         </div>
-    </div>
-</div>
 
-  <!-- Modal Artista 3 -->
-  <div class="modal fade" id="modalArtista3" tabindex="-1" aria-labelledby="modalArtista3Label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalArtista3Label">Frida Khalo</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Conocida cariñosamente como "La Pintora de las Emociones", Frida Kahlo sigue cautivando con su arte audaz y su expresión personal única. Su capacidad para transmitir sus experiencias y emociones a través de sus pinturas la convierte en una figura inspiradora para aquellos que buscan autenticidad y valor en el arte y la vida misma.</p>
+        <!-- Modales -->
+        <!-- Modal Artista 1 -->
+        <div class="modal fade" id="modalArtista1" tabindex="-1" aria-labelledby="modalArtista1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalArtista1Label">Vicente Van Gogh</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="imgArtistas/artista1.jpg" alt="Vicente Van Gogh" class="img-fluid">
+                        <p class="mt-3">Vincent van Gogh sigue cautivando con su arte emotivo y distintivo, inspirando a generaciones con su pasión por la pintura y su amor por la naturaleza. Su legado continúa vivo, recordándonos la importancia de expresar nuestras emociones a través del arte.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-    </section>      
 
+        <!-- Modal Artista 2 -->
+        <div class="modal fade" id="modalArtista2" tabindex="-1" aria-labelledby="modalArtista2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalArtista2Label">Miguel Angel</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="imgArtistas/artista2.jpg" alt="Miguel Angel" class="img-fluid">
+                        <p class="mt-3">Reconocido por su genio escultórico y su visión artística sin igual, Miguel Ángel es venerado como uno de los mayores artistas renacentistas. Su habilidad para dar vida a la piedra y su dedicación a la perfección técnica lo han convertido en una figura legendaria en la historia del arte.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Modal Artista 3 -->
+        <div class="modal fade" id="modalArtista3" tabindex="-1" aria-labelledby="modalArtista3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalArtista3Label">Frida Khalo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="imgArtistas/artista3.jpg" alt="Frida Khalo" class="img-fluid">
+                        <p class="mt-3">Conocida cariñosamente como "La Pintora de las Emociones", Frida Kahlo sigue cautivando con su arte audaz y su expresión personal única. Su capacidad para transmitir sus experiencias y emociones a través de sus pinturas la convierte en una figura inspiradora para aquellos que buscan autenticidad y valor en el arte y la vida misma.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!--========================================================== -->
-                        <!--FOOTER-->
-<!--========================================================== -->
-      <footer >
+    <!--========================================================== -->
+    <!-- FOOTER -->
+    <!--========================================================== -->
+    <footer>
+        <!-- Footer content -->
+    </footer>
 
-      </footer>
-      
-      
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<script src="scripts.js/scripts.js"></script>
+    <script src="scripts.js/scripts.js"></script>
 
-
-    
- 
 </body>
 
-
-
 </html>
-
-

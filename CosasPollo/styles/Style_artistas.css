@@ -1,4 +1,4 @@
-/*===============Propiedades Globales================*/
+/*=============== Propiedades Globales ================*/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
@@ -7,76 +7,76 @@ body {
     overflow-x: hidden;
 }
 
+/*=================== MENU ==========================*/
 
-/*===================MENU==========================*/
+#menu a, button {
+    font-size: 18px !important;
+    font-weight: 600;
+}
 
-#menu a, button{
-     font-size: 18px !important;
-     font-weight: 600;
-    
- }
+#menu a {
+    color: #3f3f3f;
+}
 
-
-#menu a{
-     color:#3f3f3f;
-     
- }
-
- 
-/*=========================FOOTER================================*/
+/*========================= FOOTER =================================*/
 
 footer {
     background: #1b2a4e;
-    min-height: 100px;;
+    min-height: 100px;
 }
-footer p{
-    color:#f3f3f3;
-    text-align:center;
+
+footer p {
+    color: #f3f3f3;
+    text-align: center;
 }
-#iconos  i {
+
+#iconos i {
     font-size: 26px;
     padding: 0 8px;
-    color:#f3f3f3;
+    color: #f3f3f3;
 }
 
+/*-----------------------------------------------*/
 
-
-
- .container {
-  position: relative;
-  width: 100%;
-  text-align: center; /* Centra el contenido horizontalmente */
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 
 .image-container {
-  display: inline-block;
-  margin-right: 10px; /* Espacio entre las imágenes */
-  position: relative; /* Ajusta el posicionamiento relativo */
+    margin: 10px;
+    position: relative;
 }
 
 .img-thumbnail {
-  cursor: pointer;
-  width: 300px; /* Tamaño fijo para el ancho */
-  height: 300px; /* Tamaño fijo para la altura */
-  object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+    cursor: pointer;
+    width: 300px; /* Tamaño fijo para el ancho */
+    height: 300px; /* Tamaño fijo para la altura */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
 }
 
-.popover-container {
-  position: absolute;
-  top: 100%; /* Ajusta el top para que aparezcan debajo de las imágenes */
-  left: 0;
-  background-color: white;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  z-index: 1000;
+.modal-body img {
+    width: 100%;
+    height: auto;
 }
 
-section {
-  height: 600px; /* Altura fija deseada */
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        width: 100%;
+        max-width: 300px; /* Ancho máximo para que no se expandan demasiado */
+    }
+
+    .img-thumbnail {
+        width: 100%;
+        height: auto;
+    }
 }
-
-
-
-
-
