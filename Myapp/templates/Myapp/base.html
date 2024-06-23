@@ -1,6 +1,7 @@
 {% load bootstrap5 %}
 {% bootstrap_css %}
 {% bootstrap_javascript %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,8 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    {% load static %}
-    <link rel="stylesheet" href="{%static 'Myapp/styles/style_index.css'%}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    {% block extra_css %}{% endblock %}
 </head>
 
 <body>
@@ -92,6 +94,7 @@
 
 </div>
 
+
     <footer>
         <div class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
             <p class="fs-5 px-3  pt-3">GroundZero &copy; Todos Los Derechos Reservados 2024</p>
@@ -103,5 +106,12 @@
         </div>
     </footer>
 </body>
+
+ <!-- Bootstrap JS, Popper.js, and jQuery -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <!-- Page-specific JS -->
+ {% block extra_js %}{% endblock %}
 
 </html>

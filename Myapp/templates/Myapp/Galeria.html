@@ -2,17 +2,163 @@
 
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'Myapp/styles/Style_galeria.css' %}">
+{% endblock %}
+
 {% block contenido %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h2>aca ira la galeria</h2>
-</body>
-</html>
+<div class="filters">
+    <!-- Filtros -->
+    <label for="artist">Artista:</label>
+    <select id="artist">
+        <option value="todos">Todos</option>
+        <option value="miguelangel">Miguel Angel</option>
+        <option value="vangogh">Van Gogh</option>
+        <option value="frida">Frida Khalo</option>
+        <option value="dali">Salvador Dali</option>
+        <option value="suzanne">Suzanne Belperron</option>
+        <option value="alexander">Alexander Calder</option>
+        <option value="monet">Claude Monet</option>
+        <option value="artemisia">Artemisia Gentileschi</option>
+    </select>
+    <label for="type">Tipo de Arte:</label>
+    <select id="type">
+        <option value="todos">Todos</option>
+        <option value="pintura">Pintura</option>
+        <option value="escultura">Escultura</option>
+        <option value="orfebreria">Orfebrería</option>
+    </select>
+</div>
+<div class="gallery">
+    <!-- Obras -->
+    <div class="card" data-artist="miguelangel" data-type="escultura">
+        <img src="{% static 'Myapp/imgObras/Michelangelo,_madonna_della_scala,_1491_ca,_01.JPG' %}" alt="escultura1">
+        <h3>madonna della scala</h3>
+        <p>Virgen y el Niño en una escena íntima y conmovedora.</p>
+        <p>$98.990</p>
+        <button class="add-to-cart" data-bs-toggle="popover" data-bs-placement="top"
+            data-bs-content="Producto agregado correctamente">Agregar al carrito</button>
+    </div>
+    <div class="card" data-artist="vangogh" data-type="pintura">
+        <img src="{% static 'Myapp/imgObras/wheatfields.jpg' %}" alt="pintura1">
+        <h3>wheatfields</h3>
+        <p>Campos de trigo vibrantes y expresionistas con pinceladas enérgicas.</p>
+        <p>$64.990</p>
+        <button class="add-to-cart" data-bs-toggle="popover" data-bs-placement="top"
+            data-bs-content="Producto agregado correctamente">Agregar al carrito</button>
+    </div>
+    <div class="card" data-artist="vangogh" data-type="pintura">
+        <img src="{% static 'Myapp/imgObras/van-gogh-s-bedroom-in-arles-1889-1646929996.jpg' %}" alt="pintura2">
+        <h3>Van gogh's bedroom in arles</h3>
+        <p>Interior sereno con muebles simples y colores vibrantes.</p>
+        <p>$86.000</p>
+        <button class="add-to-cart" data-bs-toggle="popover" data-bs-placement="top"
+            data-bs-content="Producto agregado correctamente">Agregar al carrito</button>
+    </div>
+    <div class="card" data-artist="vangogh" data-type="pintura">
+        <img src="{% static 'Myapp/imgObras/images.jpg' %}" alt="pintura3">
+        <h3>Starry Night</h3>
+        <p>Remolinos estrellados en un cielo azul profundo y turbulento.</p>
+        <p>$198.990</p>
+        <button class="add-to-cart" data-bs-toggle="popover" data-bs-placement="top"
+            data-bs-content="Producto agregado correctamente">Agregar al carrito</button>
+    </div>
+    <div class="card" data-artist="miguelangel" data-type="escultura">
+        <img src="{% static 'Myapp/imgObras/descarga.jpg' %}" alt="escultura2">
+        <h3>Michelangelo's David</h3>
+        <p>Estatua imponente de David en mármol, majestuosa y poderosa.</p>
+        <p>$988.990</p>
+        <button class="add-to-cart" data-bs-toggle="popover" data-bs-placement="top"
+            data-bs-content="Producto agregado correctamente">Agregar al carrito</button>
+    </div>
+    <div class="card" data-artist="miguelangel" data-type="escultura">
+        <img src="{% static 'Myapp/imgObras/la-piedad-del-vaticano_1328x2000_42e79e9e.jpg' %}" alt="escultura3">
+        <h3>Michelangelo's Pietà</h3>
+        <p>Escultura conmovedora de María sosteniendo a Jesús después de la crucifixión.</p>
+        <p>$560.990</p>
+        <button class="add-to-cart" data-bs-toggle="popover" data-bs-placement="top"
+            data-bs-content="Producto agregado correctamente">Agregar al carrito</button>
+    </div>
+    <div class="card" data-artist="miguelangel" data-type="escultura">
+        <img src="{% static 'Myapp/imgObras/Madonna_michelangelo1.jpg' %}" alt="escultura4">
+        <h3>Madonna and Child</h3>
+        <p>Madonna con el Niño: ternura divina capturada en arte</p>
+        <p>$630.990</p>
+        <button class="add-to-cart" data-bs-toggle="popover" data-bs-placement="top"
+            data-bs-content="Producto agregado correctamente">Agregar al carrito</button>
+    </div>
+    <div class="card" data-artist="frida" data-type="pintura">
+        <img src="{% static 'Myapp/imgObras/KAHLOESPANO2305-superJumbo-v13.png' %}" alt="pintura4">
+        <h3>Self Portrait with Necklace of Thorns</h3>
+        <p>Autorretrato impactante que exhibe dolor y fortaleza con espinas.</p>
+        <p>$76.000</p>
+        <button class="add-to-cart" data-bs-toggle="popover" data-bs-placement="top"
+            data-bs-content="Producto agregado correctamente">Agregar al carrito</button>
+    </div>
+    <div class="card" data-artist="frida" data-type="pintura">
+        <img src="{% static 'Myapp/imgObras/descarga (1).jpg' %}" alt="pintura5">
+        <h3>Diego y yo</h3>
+        <p>Obra íntima que muestra el amor y la conexión emocional.</p>
+        <p>$89.990</p>
+        <button class="add-to-cart" data-bs-toggle="popover" data-bs-placement="top"
+            data-bs-content="Producto agregado correctamente">Agregar al carrito</button>
+    </div>
+    <div class="card" data-artist="frida" data-type="pintura">
+        <img src="{% static 'Myapp/imgObras/unnamed.jpg' %}" alt="pintura6">
+        <h3>Viva la Vida</h3>
+        <p>Obra íntima que muestra el amor y la conexión emocional.</p>
+        <p>$78.990</p>
+        <button class="add-to-cart" data-bs-toggle="popover" data-bs-placement="top"
+            data-bs-content="Producto agregado correctamente">Agregar al carrito</button>
+    </div>
+    <div class="card" data-artist="dali" data-type="pintura">
+        <img src="{% static 'Myapp/imgObras/salvador-dali-la_tentacion_de_san_antonio-noticias-totenart-1.jpg' %}" alt="pintura7">
+        <h3>La Tentacion de San Antonio</h3>
+        <p>Visiones surrealistas del deseo y la fe en lucha espiritual.</p>
+        <p>$199.990</p>
+        <button class="add-to-cart" data-bs-toggle="popover" data-bs-placement="top"
+            data-bs-content="Producto agregado correctamente">Agregar al carrito</button>
+    </div>
+    <div class="card" data-artist="suzanne" data-type="orfebreria">
+        <img src="{% static 'Myapp/imgObras/6R1A1504_silo-Edit.jpg' %}" alt="orfebreria1">
+        <h3>Anillo de oro</h3>
+        <p>Año 1945</p>
+        <p>$329.990</p>
+        <button class="add-to-cart" data-bs-toggle="popover" data-bs-placement="top"
+            data-bs-content="Producto agregado correctamente">Agregar al carrito</button>
+    </div>
+    <div class="card" data-artist="alexander" data-type="escultura">
+        <img src="{% static 'Myapp/imgObras/steel-fish-1934.jpg' %}" alt="escultura5">
+        <h3>Steel Fish</h3>
+        <p>Escultura cinética que evoca movimiento y fluidez marina</p>
+        <p>$250.990</p>
+        <button class="add-to-cart" data-bs-toggle="popover" data-bs-placement="top"
+            data-bs-content="Producto agregado correctamente">Agregar al carrito</button>
+    </div>
+    <div class="card" data-artist="monet" data-type="pintura">
+        <img src="{% static 'Myapp/imgObras/comentario_de_el_estanque_de_ninfeas_4481_1_600.jpg' %}" alt="pintura8">
+        <h3>Estanque de Ninfeas</h3>
+        <p>Lirios acuáticos vibrantes capturan la serenidad y luz natural.</p>
+        <p>$99.990</p>
+        <button class="add-to-cart" data-bs-toggle="popover" data-bs-placement="top"
+            data-bs-content="Producto agregado correctamente">Agregar al carrito</button>
+    </div>
+    <div class="card" data-artist="artemisia" data-type="pintura">
+        <img src="{% static 'Myapp/imgObras/Judit_decapitando_a_Holofernes,_por_Artemisia_Gentileschi.jpg' %}" alt="pintura9">
+        <h3>Judith decapitando a Holofernes</h3>
+        <p>Poder femenino, violencia justiciera, maestría en pintura</p>
+        <p>$599.990</p>
+        <button class="add-to-cart" data-bs-toggle="popover" data-bs-placement="top"
+            data-bs-content="Producto agregado correctamente">Agregar al carrito</button>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'Myapp/scripts.js/galeria.js' %}"></script>
+<script src="{% static 'Myapp/scripts.js/scripts.js' %}"></script>
 {% endblock %}
