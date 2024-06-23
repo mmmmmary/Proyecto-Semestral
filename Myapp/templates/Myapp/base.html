@@ -26,7 +26,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light p-3" id="menu">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="{% url 'home/' %}">
                     <span class="fs-5 text-primary fw-bold">GroundZero</span>
                 </a>
 
@@ -41,13 +41,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="{% url 'home/' %}">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Artistas.html">Artistas</a>
+                            <a class="nav-link" href="{% url 'artistas/' %}">Artistas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                            <a class="nav-link" href="{% url 'Nosotros/' %}">Nosotros</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -55,8 +55,8 @@
                                 Sesion
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="Sesion.html">Iniciar Sesion</a></li>
-                                <li><a class="dropdown-item" href="Crear_usuario.html">Registrarse</a></li>
+                                <li><a class="dropdown-item" href="{% url 'sesion/' %}">Iniciar Sesion</a></li>
+                                <li><a class="dropdown-item" href="{% url 'crear_usuario/' %}">Registrarse</a></li>
 
                             </ul>
                         </li>
@@ -66,11 +66,11 @@
                                 Obras
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="Galeria.html">Pinturas</a></li>
-                                <li><a class="dropdown-item" href="Galeria.html">Orfebrería</a></li>
-                                <li><a class="dropdown-item" href="Galeria.html">Esculturas</a></li>
-                                <li><a class="dropdown-item" href="Galeria.html">Tejidos</a></li>
-                                <li><a class="dropdown-item" href="Galeria.html">Otros</a></li>
+                                <li><a class="dropdown-item" href="{% url 'galeria/' %}">Pinturas</a></li>
+                                <li><a class="dropdown-item" href="{% url 'galeria/' %}">Orfebrería</a></li>
+                                <li><a class="dropdown-item" href="{% url 'galeria/' %}">Esculturas</a></li>
+                                <li><a class="dropdown-item" href="{% url 'galeria/' %}">Tejidos</a></li>
+                                <li><a class="dropdown-item" href="{% url 'galeria/' %}">Otros</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -7,3 +7,5 @@ def nosotros(request):
     return render(request, 'Myapp/Nosotros.html')
 def galeria(request):
     return render(request, 'Myapp/galeria.html')
+def artistas(request):
+    return render(request, 'Myapp/artistas.html')
