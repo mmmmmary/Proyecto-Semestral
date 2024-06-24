@@ -15,9 +15,9 @@ class Obra(models.Model):
     descripcion = models.TextField()
     autor = models.CharField(max_length=20)
     tipo_obra = models.ForeignKey(Tipo_obra, on_delete=models.PROTECT)
-
+    imagen = models.ImageField(upload_to="productos", null=True)
     def __str__(self):
-        return str(self.nombre)+" "+str(self.apellido_paterno)
+        return str(self.nombre)
     
     
 opciones_consultas = [

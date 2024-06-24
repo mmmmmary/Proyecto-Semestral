@@ -1,114 +1,60 @@
-/*===============Propiedades Globales================*/
+/* Style_galeria.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+/* Estilo básico para el cuerpo */
 body {
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-}
-
-
-/*===================MENU==========================*/
-
- #menu a, button{
-     font-size: 18px !important;
-     font-weight: 600;
-    
- }
-
- #menu a{
-     color:#3f3f3f;
-     
- }
-
- 
-/*=========================FOOTER================================*/
-
-footer {
-    background: #1b2a4e;
-    min-height: 100px;;
-}
-footer p{
-    color:#f3f3f3;
-    text-align:center;
-}
-#iconos  i {
-    font-size: 26px;
-    padding: 0 8px;
-    color:#f3f3f3;
-}
-/* ----------- */
-
-.gallery-header a {
-    color: #f3f3f3;
-    font-weight: 600;
-}
-
-.gallery-header a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-}
-
-/* Estilos para el contenido de la galería */
-.filters {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.filters label, .filters select {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    list-style: none;
+    margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-.card {
-    text-align: center;
+/* Galería para centrar y ajustar la distribución de los contenedores */
+.gallery {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%; 
-    border: 1px solid #e0e0e0;
-    border-radius: 8px; 
-    overflow: hidden; 
+    flex-wrap: wrap;            /* Permitir que los elementos envuelvan a la siguiente línea */
+    justify-content: center;    /* Centrar los elementos horizontalmente */
+    padding: 20px;
+    gap: 20px;                  /* Espacio entre los contenedores */
 }
 
-.card img {
-    max-width: 100%;
-    max-height: 200px;
-    height: auto;
-    object-fit: cover; 
+/* Estilo para el contenedor de cada obra */
+.contenedor_obra {
+    width: 80%;                /* Ajusta el ancho según tu preferencia */
+    max-width: 300px;          /* Ancho máximo para el contenedor */
+    background-color: #fff;    /* Fondo blanco para el contenedor */
+    padding: 15px;             /* Espacio interior del contenedor */
+    border-radius: 8px;        /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+    box-sizing: border-box;    /* Incluye el padding en el ancho total */
+    text-align: center;        /* Centrar el texto dentro del contenedor */
 }
 
-.card h3 {
+/* Estilo para las imágenes dentro del contenedor */
+.contenedor_obra img {
+    width: 100%;               /* Imagen ocupa todo el ancho del contenedor */
+    height: auto;              /* Mantener la proporción de la imagen */
+    border-radius: 8px;        /* Bordes redondeados para la imagen */
+    margin-bottom: 15px;       /* Espacio debajo de la imagen */
+}
+
+/* Estilo para los detalles de la obra */
+.detalle h5 {
+    font-size: 1.2em;          /* Tamaño de la fuente para el tipo de obra */
+    color: #555;               /* Color del texto */
     margin: 10px 0;
-    font-size: 18px;
 }
 
-.card p {
+.detalle h3 {
+    font-size: 1.5em;          /* Tamaño de la fuente para el nombre de la obra */
+    color: #333;               /* Color del texto */
     margin: 10px 0;
-    font-size: 14px;
 }
 
-.card .add-to-cart {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-    align-self: auto; 
+.detalle p {
+    margin: 10px 0;            /* Espacio alrededor del párrafo */
+    color: #666;               /* Color del texto del párrafo */
 }
 
-
+.detalle p:last-of-type {
+    font-weight: bold;         /* Hacer el último párrafo (precio) en negrita */
+    color: #333;               /* Color del texto del precio */
+}
