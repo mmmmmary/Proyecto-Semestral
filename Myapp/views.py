@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import ContactoForm
 
 # Create your views here.
 def home(request):
@@ -9,3 +10,5 @@ def galeria(request):
     return render(request, 'Myapp/galeria.html')
 def artistas(request):
     return render(request, 'Myapp/artistas.html')
+def contacto(request):
+    return render(request, 'Myapp/contacto.html')
