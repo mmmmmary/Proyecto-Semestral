@@ -1,0 +1,61 @@
+/* styles_contacto.css */
+
+.contact-form-container {
+    width: 80%;          /* Ancho del 80% del contenedor */
+    max-width: 600px;    /* Ancho máximo de 600px */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;   /* Centra el formulario horizontalmente */
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form-container form {
+    display: grid;
+    gap: 10px;
+}
+
+.contact-form-container form label {
+    font-weight: bold;
+}
+
+.contact-form-container form input[type="text"],
+.contact-form-container form input[type="email"],
+.contact-form-container form textarea,
+.contact-form-container form select {
+    width: calc(100% - 16px); /* Considerando el padding */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form-container form textarea {
+    height: 150px;
+}
+
+.contact-form-container form input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+.contact-form-container form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form-container form input[type="submit"]:hover {
+    background-color: #45a049;
+}

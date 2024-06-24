@@ -11,4 +11,16 @@ def galeria(request):
 def artistas(request):
     return render(request, 'Myapp/artistas.html')
 def contacto(request):
-    return render(request, 'Myapp/contacto.html')
+    data = {
+        'form': ContactoForm()
+    }
+
+    if request.method == 'POST':
+        formulario = ContactoForm(data=request.POST)
+        if formulario.is_valid():
+            formulario.save()
+            data["mensaje"] = "Contacto Enviado"
+        else:
+            data["form"] = formulario 
+
+    return render(request, 'Myapp/contacto.html', data)
