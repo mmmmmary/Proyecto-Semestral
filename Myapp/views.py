@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from .forms import ContactoForm
+from django.shortcuts import render, redirect, get_object_or_404
+from .forms import ContactoForm, ObraForm
 from .models import Obra
 
 # Create your views here.
@@ -33,3 +33,49 @@ def contacto(request):
             data["form"] = formulario 
 
     return render(request, 'Myapp/contacto.html', data)
+
+def agregar_producto(request):
+
+    data = {
+        'form' : ObraForm()
+    }
+
+    if request.method == 'POST':
+        formulario = ObraForm(data=request.POST, files=request.FILES)
+        if formulario.is_valid():
+            formulario.save()
+            data["mensaje"] = "Obra Agregada"
+        else:
+            data["form"] = formulario
+
+    return render(request, 'Myapp/obras/agregar.html', data)
+
+def listar_productos(request):
+
+    obras = Obra.objects.all()
+
+    data = {
+
+        'obras': obras
+    }
+    
+    return render(request, 'Myapp/obras/listar.html', data)
+
+def modificar_productos(request, id):
+
+    obra = get_object_or_404(Obra, id=id)
+
+    data = {
+
+        'form' :ObraForm(instance=obra)
+    }
+
+    if request.method == 'POST':
+        formulario = ObraForm(data=request.POST, instance=obra, files=request.FILES)
+        if formulario.is_valid():
+            formulario.save()
+            return redirect(to=listar_productos)
+        else:
+            data["form"] = formulario
+
+    return render(request, 'Myapp/obras/modificar.html' )

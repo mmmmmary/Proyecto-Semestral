@@ -1,0 +1,41 @@
+{% extends 'Myapp/base.html' %}
+
+{% block contenido %}
+
+{% load crispy_forms_tags %}
+
+<div class="card-body">
+    <div class="">
+        <h2>Listado de Obras</h2>
+        
+        <table class="table table-striped table-hover table-responsive-sm">
+
+            <tr>
+
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Autor</th>
+                <th>Tipo</th>
+                <th>Opciones</th>
+
+            </tr>
+
+            {% for p in obras %}
+            <tr>
+                <td>{{ p.nombre | capfirst }}</td>
+                <td>{{ p.precio}}</td>
+                <td>{{ p.autor | capfirst }}</td>
+                <td>{{ p.tipo_obra | capfirst}}</td>
+                <td>
+                    <a href="{% url 'modificar_productos' p.id %}">Modificar</a>
+                </td>
+            </tr>
+
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+
+
+{% endblock %}
