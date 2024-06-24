@@ -1,0 +1,82 @@
+/*=============== Propiedades Globales ================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/*=================== MENU ==========================*/
+
+#menu a, button {
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+#menu a {
+    color: #3f3f3f;
+}
+
+/*========================= FOOTER =================================*/
+
+footer {
+    background: #1b2a4e;
+    min-height: 100px;
+}
+
+footer p {
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
+    color: #f3f3f3;
+}
+
+/*-----------------------------------------------*/
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-container {
+    margin: 10px;
+    position: relative;
+}
+
+.img-thumbnail {
+    cursor: pointer;
+    width: 300px; /* Tamaño fijo para el ancho */
+    height: 300px; /* Tamaño fijo para la altura */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+}
+
+.modal-body img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        width: 100%;
+        max-width: 300px; /* Ancho máximo para que no se expandan demasiado */
+    }
+
+    .img-thumbnail {
+        width: 100%;
+        height: auto;
+    }
+}

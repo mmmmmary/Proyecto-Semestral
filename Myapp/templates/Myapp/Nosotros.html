@@ -1,0 +1,46 @@
+{% extends 'Myapp/base.html' %}
+
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'Myapp/styles/style_nosotros.css' %}">
+{% endblock %}
+
+
+{% block contenido %}
+<section class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-4 mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">¿Quienes somos?</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Tincidunt praesent semper feugiat nibh
+                            sed. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Viverra
+                            mauris in aliquam sem fringilla ut morbi tincidunt augue. Eu tincidunt tortor aliquam nulla.
+                            Faucibus a pellentesque sit amet. Pulvinar neque laoreet suspendisse interdum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 ">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">¿Que ofrecemos?</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Tincidunt praesent semper feugiat nibh
+                            sed. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Viverra
+                            mauris in aliquam sem fringilla ut morbi tincidunt augue. Eu tincidunt tortor aliquam nulla.
+                            Faucibus a pellentesque sit amet. Pulvinar neque laoreet suspendisse interdum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'Myapp/scripts.js/scripts.js' %}"></script>
+<script src="{% static 'Myapp/scripts.js/nosotros.js' %}"></script>
+{% endblock %}
